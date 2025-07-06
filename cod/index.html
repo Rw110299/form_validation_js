@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário com Validação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Formulário com Validação</h2>
+  
+  <form id="meuForm">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" />
+    <div class="error" id="erroNome"></div>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+    <div class="error" id="erroEmail"></div>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" />
+    <div class="error" id="erroSenha"></div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="success" id="mensagemSucesso"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
